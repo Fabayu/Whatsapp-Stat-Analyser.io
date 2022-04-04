@@ -1,31 +1,14 @@
-import streamlit as st
-from PIL import Image
-import streamlit as st
-from PIL import Image
 
-st.set_page_config(
-    page_title="statsmes",
-    page_icon="chart_with_upwards_trend",
-    layout="wide",
-)
+import streamlit as st
 
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
+
 import preprocessor
 import helper
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
-
-
-# st.beta_set_page_config(page_title='StatApp',page_icon='')
-# st.sidebar.title("Whatsapp Chat Analyzer")
 
 uploaded_file = st.sidebar.file_uploader("Choose a file to get all the stats")
 if uploaded_file is not None:
