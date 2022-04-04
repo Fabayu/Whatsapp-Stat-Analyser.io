@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 
 st.set_page_config(
-    page_title="Vatsappstat",
+    page_title="statshere",
     page_icon="chart_with_upwards_trend",
     layout="wide",
 )
